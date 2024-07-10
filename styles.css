@@ -1,0 +1,54 @@
+/* Add this code to a file named style.css in the same directory as your HTML file */
+
+body {
+  font-family: Arial, sans-serif; /* Set the font family */
+  margin: 0; /* Remove the default margin */
+  padding: 0; /* Remove the default padding */
+  background-color: #f2f2f2; /* Set the background color */
+}
+
+html {
+  box-sizing: border-box; /* Set the box model to border-box */
+}
+
+* {
+  box-sizing: inherit; /* Inherit the box model from the parent */
+}
+
+body > * {
+  max-width: 800px; /* Set a maximum width for the content */
+  margin: 40px auto; /* Add some margin and center the content */
+  padding: 20px; /* Add some padding */
+  background-color: #fff; /* Set the background color for the content */
+  border: 1px solid #ddd; /* Add a border around the content */
+  border-radius: 10px; /* Add a rounded border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+
+body > * > * {
+  margin-bottom: 20px; /* Add some margin between elements */
+}
+
+body > * > *:last-child {
+  margin-bottom: 0; /* Remove the margin from the last element */
+}
+
+body > * > *:first-child {
+  margin-top: 0; /* Remove the margin from the first element */
+}
+
+body > * > *:only-child {
+  margin: 0; /* Remove the margin from the only child */
+}
+
+body > * > *:only-child + * {
+  margin-top: 20px; /* Add some margin after the only child */
+}
+
+body > * > *:only-child + *:first-child {
+  margin-top: 0; /* Remove the margin from the first child after the only child */
+}
+
+body > * > *:only-child + *:last-child {
+  margin-bottom: 0; /* Remove the margin from the last child after the only child */
+}
